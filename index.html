@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duhoot</title>
+    <meta name="keywords" content="keywords">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<nav class="header_navigation">
+					<div class="logo"><a href="#" class="logo_link"></a></div>
+					<a href="#" class="mob_menu"></a>
+					<ul class="header_menu">
+						<li><a class="menu_link menu_link_reality" href="#">Reality</a></li>
+						<li><a class="menu_link menu_link_living" href="#">Living</a></li>
+						<li><a class="menu_link menu_link_education" href="#">EduCation</a></li>
+						<li><a class="menu_link menu_linkentertaiment" href="#">Entertainment</a></li>
+						<li><a class="menu_link menu_link_mobility" href="#">Mobility</a></li>
+						<li class="search"><button class="search_btn"><i class="fa fa-search search_ic" aria-hidden="true"></i><span>Search</span></button></li>
+						<li class="user"><a href="#" class="user_link"><i class="fa fa-user user_ic" aria-hidden="true"></i>Login</a></li>
+					</ul>
+				</nav> <!-- navigation -->
+			</div>
+			<div class="header_form">
+				<div class="container">
+					<div class="form_wrapper">
+						<h2 class="form_title">What are you looking for?</h2>
+						<form action="" class="choice_form">
+							<div class="action_form">
+								<select style="width: 220px; height:52px;" name="City" class="form_select">
+									<option value="Dubai">Dubai</option>
+									<option value="Alabama">Alabama</option>
+									<option value="Berlin">Berlin</option>
+									<option value="D.C.">D.C.</option>
+									<option value="New-York">New-York</option>
+									<option value="Atlanta">Atlanta</option>
+									<option value="Montana">Montana</option>
+									<option value="Massachusetts">Massachusetts</option>
+								</select>
+								<select style="width: 220px; height:52px;" name="Target" class="form_select">
+									<option value="">Education</option>
+									<option value="">Work</option>
+									<option value="">Travel</option>
+									<option value="">Living</option>
+								</select>
+							</div>
+							<input class="details" type="text" value="" placeholder="Keyword, name, date, ...">
+							<button class="form_btn">Search</button>
+						</form>
+					</div>
+				</div>
+			</div> <!-- form -->
+		</header>
+		<div class="sorting">
+			<div class="container">
+				<div class="sorting_item">
+					<div class="popular">
+						<a href="#" class="popular_link active">Recommended</a>
+						<a href="#" class="popular_link">latest</a>
+						<a href="#" class="popular_link">Highlights</a>
+					</div>
+					<div class="choice_city">
+						<select style="width: 117px; height:37px;" name="choice_city" id="" class="city">
+							<option value="Dubai">Dubai</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Berlin">Berlin</option>
+							<option value="D.C.">D.C.</option>
+							<option value="New-York">New-York</option>
+							<option value="Atlanta">Atlanta</option>
+							<option value="Montana">Montana</option>
+							<option value="Massachusetts">Massachusetts</option>
+						</select>
+						<button class="map">Show map<i class="fa fa-map-marker map_ic active" aria-hidden="true"></i></button>
+					</div>
+					<div class="filter">
+						<span class="filter_name">Filter:</span>
+						<button class="filter_link all_filter active"></button>
+						<button class="filter_link living"></button>
+						<button class="filter_link guests"></button>
+						<button class="filter_link education"></button>
+						<button class="filter_link amusement"></button>
+						<button class="filter_link travel"></button>
+					</div>
+				</div>
+			</div>
+		</div> <!-- Sorting block -->
+		<div class="content">
+			<div class="container">
+				<div class="content_items">
+					<div class="content_block_sm content_living">
+						<a class="content_pic content_pic_living" href="#">
+							<img class="content_pic_small" src="img/content/2bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<span class="price">$2.900</span>
+							<button class="content_sm_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">2 bedroom house for rent in Dubai</p>
+						<a class="company_link" href="#"><span class="company">Vision Agency</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_sm content_amusement">
+						<a class="content_pic content_pic_amusement" href="#">
+							<img class="content_pic_small" src="img/content/party.jpg" alt="">
+							<span class="pic_line"></span>
+							<button class="content_sm_btn content_amusement_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">Beach party festival 2014</p>
+						<a class="company_link" href="#"><span class="company">Long beach</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							(1165)
+						</p>
+					</div>
+					<div class="content_block_sm content_travel">
+						<a class="content_pic content_pic_travel" href="#">
+							<img class="content_pic_small" src="img/content/2bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<button class="content_sm_btn content_travel_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">Aliquam quis pulvinar purus</p>
+						<a class="company_link" href="#"><span class="company">Bus Trans</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_sm content_living">
+						<a class="content_pic" href="#">
+							<img class="content_pic_small" src="img/content/4bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<span class="price">$2.900</span>
+							<button class="content_sm_btn content_living_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">4 bedroom house for rent in Dubai</p>
+						<a class="company_link" href="#"><span class="company">Reality Agency</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(165)
+						</p>
+					</div>
+					<div class="content_block_big content_living_big">
+						<a class="content_pic_big" href="#">
+							<img class="content_pic_big" src="img/content/vision1.jpg" alt="">
+							<span class="pic_line pic_line_living"></span>
+						</a>
+						<div class="content_filter_ic filter_living"></div>
+						<div class="conten_user_pic user_living"></div>
+						<p class="content_text_big">
+							<span class="stars_text">
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_text_name">Lucy-P</span>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a class="text_big_link" href="#">...read more</a>
+						</p>
+						<a class="company_link_big" href="#"><span class="company_big">Vision Agency</span></a>
+						<p class="stars_big">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_big content_amusement_big">
+						<a class="content_pic_big" href="#">
+							<img class="content_pic_big" src="img/content/club.jpg" alt="">
+							<span class="pic_line pic_line_amusement"></span>
+						</a>
+						<div class="content_filter_ic filter_amusement"></div>
+						<div class="conten_user_pic user_amusement"></div>
+						<p class="content_text_big">
+							<span class="stars_text">
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_text_name">Peter145</span>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a class="text_big_link" href="#">...read more</a>
+						</p>
+						<a class="company_link_big" href="#"><span class="company_big">Skybox club</span></a>
+						<p class="stars_big">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							(1356)
+						</p>
+					</div>
+					<div class="content_block_sm content_living">
+						<a class="content_pic content_pic_living" href="#">
+							<img class="content_pic_small" src="img/content/2bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<span class="price">$2.900</span>
+							<button class="content_sm_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">2 bedroom house for rent in Dubai</p>
+						<a class="company_link" href="#"><span class="company">Vision Agency</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_sm content_amusement">
+						<a class="content_pic content_pic_amusement" href="#">
+							<img class="content_pic_small" src="img/content/party.jpg" alt="">
+							<span class="pic_line"></span>
+							<button class="content_sm_btn content_amusement_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">Beach party festival 2014</p>
+						<a class="company_link" href="#"><span class="company">Long beach</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							(1165)
+						</p>
+					</div>
+					<div class="content_block_sm content_travel">
+						<a class="content_pic content_pic_travel" href="#">
+							<img class="content_pic_small" src="img/content/2bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<button class="content_sm_btn content_travel_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">Aliquam quis pulvinar purus</p>
+						<a class="company_link" href="#"><span class="company">Bus Trans</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_sm content_living">
+						<a class="content_pic content_pic_living" href="#">
+							<img class="content_pic_small" src="img/content/2bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<span class="price">$2.900</span>
+							<button class="content_sm_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">2 bedroom house for rent in Dubai</p>
+						<a class="company_link" href="#"><span class="company">Vision Agency</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_big content_amusement_big">
+						<a class="content_pic_big" href="#">
+							<img class="content_pic_big" src="img/content/club.jpg" alt="">
+							<span class="pic_line pic_line_amusement"></span>
+						</a>
+						<div class="content_filter_ic filter_amusement"></div>
+						<div class="conten_user_pic user_amusement"></div>
+						<p class="content_text_big">
+							<span class="stars_text">
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_text_name">Peter145</span>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<a class="text_big_link" href="#">...read more</a>
+						</p>
+						<a class="company_link_big" href="#"><span class="company_big">Skybox club</span></a>
+						<p class="stars_big">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							(1356)
+						</p>
+					</div>
+					<div class="content_block_sm content_living">
+						<a class="content_pic content_pic_living" href="#">
+							<img class="content_pic_small" src="img/content/2bedroom.jpg" alt="">
+							<span class="pic_line"></span>
+							<span class="price">$2.900</span>
+							<button class="content_sm_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">2 bedroom house for rent in Dubai</p>
+						<a class="company_link" href="#"><span class="company">Vision Agency</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							(365)
+						</p>
+					</div>
+					<div class="content_block_sm content_amusement">
+						<a class="content_pic content_pic_amusement" href="#">
+							<img class="content_pic_small" src="img/content/party.jpg" alt="">
+							<span class="pic_line"></span>
+							<button class="content_sm_btn content_amusement_btn"><i class="fa fa-search" aria-hidden="true"></i>show more</button>
+							<span class="content_pic_stars">
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+								<i class="fa fa-star-o stars_ic" aria-hidden="true"></i>
+							</span>
+							<span class="content_pic_comment"><i class="fa fa-comments" aria-hidden="true"></i></span>
+						</a>
+						<p class="content_text_small">Beach party festival 2014</p>
+						<a class="company_link" href="#"><span class="company">Long beach</span></a>
+						<p class="stars">
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							<i class="fa fa-star stars_ic" aria-hidden="true"></i>
+							(1165)
+						</p>
+					</div>
+					<div class="content_link">
+						<a href="#" class="content_link_load">Load more<i class="fa fa-long-arrow-right load_link_arrow" aria-hidden="true"></i></a>
+					</div>
+					
+				</div> <!-- content items -->
+			</div> <!-- container -->
+		</div> <!-- content -->
+		<div class="offer">
+			<div class="container">
+				<div class="offer_content">
+					<h4 class="offer_title">What can DuHoot offer to you?</h4>
+					<p class="offer_text">Etiam cursus ipsum quis enim faucibus</p>
+					<div class="offer_tabs">
+					     <ul class="offer_tabs_blocks">
+					        <li class="tabs_item tabs_living active"><svg class="tabs_pic tabs_living_pic active" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.03 19.56"><defs></defs><title>Vector Smart Object</title><path class="cls-1" d="M121.18,713h-6.4a1,1,0,0,1-1-1v-6.3h-3.21V712a1,1,0,0,1-1,1h-6.4a1,1,0,0,1-1-1V701.58a1,1,0,0,1,2,0V711h4.4v-6.3a1,1,0,0,1,1-1h5.21a1,1,0,0,1,1,1V711h4.4v-9.39a1,1,0,0,1,2,0V712a1,1,0,0,1-1,1Z" transform="translate(-99.17 -693.41)"/><path class="cls-1" d="M124.19,704a1,1,0,0,1-.58-.19l-11.43-8.19-11.43,8.19a1,1,0,1,1-1.16-1.63l12-8.6a1,1,0,0,1,1.16,0l12,8.6a1,1,0,0,1-.58,1.81Z" transform="translate(-99.17 -693.41)"/></svg></li>
+					        <li class="tabs_item tabs_guests"><svg class="tabs_pic tabs_guests_pic" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.28 22.62"><defs></defs><title>Vector Smart Object1</title><path class="cls-1" d="M976.15,1264.37a1,1,0,0,1-.43-.1,13.59,13.59,0,0,0-2.27-.84l.53-1.93a15.81,15.81,0,0,1,1.68.56,9.41,9.41,0,0,0,.68-3.54c0-4.51-3.11-8.18-6.93-8.18s-6.93,3.67-6.93,8.18a9.36,9.36,0,0,0,.68,3.54,16.12,16.12,0,0,1,1.68-.56l.53,1.93a13.59,13.59,0,0,0-2.27.84,1,1,0,0,1-1.31-.43,11.28,11.28,0,0,1-1.31-5.31c0-5.61,4-10.18,8.93-10.18s8.93,4.57,8.93,10.18a11.26,11.26,0,0,1-1.31,5.31,1,1,0,0,1-.88.53Z" transform="translate(-960.28 -1248.35)"/><path class="cls-1" d="M969.42,1265.53a4.13,4.13,0,0,1-.5,0c-2.64-.29-4.64-2.78-5.47-6.83a8.88,8.88,0,0,1-.15-1.24.5.5,0,0,1,.5-.53h2.74l.45-3.22a.5.5,0,0,1,1,0l.45,3.22h.7l.15-1.51a.5.5,0,0,1,.5-.45h0a.5.5,0,0,1,.5.45l.15,1.51H975a.5.5,0,0,1,.5.53,8.94,8.94,0,0,1-.15,1.24,10.83,10.83,0,0,1-2.29,5.1h0l-.24.25-.45-.26.36.35c-.17.16-.28.25-.39.34l-.4-.32.3.4a4.34,4.34,0,0,1-.36.25l-.08.06-.36.2-.12.06-.35.14-.1,0-.27.08-.26-.45.14.48-.1,0-.32.06-.17,0-.4,0Zm.39-1,.21.47-.07-.5.24,0,.24.45-.13-.48.27-.08.37-.15.36-.2.36-.25.35-.29.11-.1.23-.24h0a10,10,0,0,0,2.05-4.63q.05-.27.09-.57H970a.52.52,0,0,1-.2,0,.51.51,0,0,1-.2,0H968a.5.5,0,0,1-.49-.43v0a.5.5,0,0,1-.5.43h-2.63c0,.2.05.39.09.57.74,3.59,2.41,5.79,4.6,6l.39,0,.39,0Z" transform="translate(-960.28 -1248.35)"/><path class="cls-1" d="M962.28,1271h-2a7,7,0,0,1,7.19-6.75v2a5,5,0,0,0-5.19,4.75Z" transform="translate(-960.28 -1248.35)"/><path class="cls-1" d="M978.55,1271h-2a5,5,0,0,0-5.19-4.75v-2a7,7,0,0,1,7.19,6.75Z" transform="translate(-960.28 -1248.35)"/><path class="cls-1" d="M967.31,1258.65a.59.59,0,1,0,.59.59.59.59,0,0,0-.59-.59Z" transform="translate(-960.28 -1248.35)"/><path class="cls-1" d="M971.53,1258.65a.59.59,0,1,0,.59.59.59.59,0,0,0-.59-.59Z" transform="translate(-960.28 -1248.35)"/></svg></li>
+					        <li class="tabs_item tabs_education"><svg class="tabs_pic tabs_education_pic" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.96 16.39"><defs></defs><title>Vector Smart Object2</title><path class="cls-1" d="M907.83,1139.93a1,1,0,0,1-.4-.08l-11.2-4.88a1,1,0,0,1,0-1.83l11.2-4.88a1,1,0,0,1,.8,0l11.2,4.88a1,1,0,0,1,0,1.83l-11.2,4.88a1,1,0,0,1-.4.08Zm-8.7-5.88,8.7,3.79,8.7-3.79-8.7-3.79-8.7,3.79Z" transform="translate(-895.62 -1128.17)"/><path class="cls-1" d="M907.83,1144.56a15.66,15.66,0,0,1-8.77-2.73,1,1,0,0,1-.44-.83v-5.33a1,1,0,1,1,2,0v4.79a13.45,13.45,0,0,0,14.42,0v-4.79a1,1,0,0,1,2,0V1141a1,1,0,0,1-.44.83,15.66,15.66,0,0,1-8.77,2.73Z" transform="translate(-895.62 -1128.17)"/><path class="cls-1" d="M919.58,1141.84a.5.5,0,0,1-.5-.5V1134a.5.5,0,0,1,1,0v7.33a.5.5,0,0,1-.5.5Z" transform="translate(-895.62 -1128.17)"/><path class="cls-1" d="M919.58,1142.34a1,1,0,0,1-1-1v-3.5a1,1,0,1,1,2,0v3.5a1,1,0,0,1-1,1Z" transform="translate(-895.62 -1128.17)"/></svg></li>
+					        <li class="tabs_item tabs_amusement"><svg class="tabs_pic tabs_amusement_pic" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.68 23.55"><defs></defs><title>Vector Smart Object3</title><path class="cls-1" d="M348.05,1643.32a2.44,2.44,0,0,1-2.65-1.87c-.35-1.87,1.59-3.89,3.6-4.83a6.2,6.2,0,0,1,2.59-.64,2.44,2.44,0,0,1,2.65,1.87c.35,1.88-1.59,3.89-3.6,4.83a6.18,6.18,0,0,1-2.59.64Zm3.53-5.34a4.28,4.28,0,0,0-1.74.45c-1.64.78-2.58,2.11-2.48,2.66,0,.19.45.23.69.23a4.28,4.28,0,0,0,1.74-.45c1.65-.78,2.59-2.11,2.49-2.66,0-.18-.45-.23-.69-.23Z" transform="translate(-345.36 -1619.77)"/><polygon class="cls-1" points="8.92 18.25 6.92 18.25 6.92 4.58 8.92 4.58 8.92 18.25 8.92 18.25"/><path class="cls-1" d="M362.8,1639.74a2.44,2.44,0,0,1-2.65-1.87c-.35-1.87,1.59-3.89,3.6-4.83a6.2,6.2,0,0,1,2.59-.64,2.44,2.44,0,0,1,2.65,1.87c.35,1.87-1.6,3.89-3.6,4.83a6.18,6.18,0,0,1-2.59.64Zm3.54-5.34a4.27,4.27,0,0,0-1.74.45c-1.64.78-2.58,2.11-2.48,2.66,0,.19.45.23.69.23a4.28,4.28,0,0,0,1.74-.45c1.65-.78,2.59-2.11,2.49-2.66,0-.19-.45-.23-.69-.23Z" transform="translate(-345.36 -1619.77)"/><polygon class="cls-1" points="23.67 14.67 21.67 14.67 21.67 1 23.67 1 23.67 14.67 23.67 14.67"/><path class="cls-1" d="M353.28,1630a1,1,0,0,1-1-1v-4.63a1,1,0,0,1,.76-1l14.75-3.58a1,1,0,0,1,.86.19,1,1,0,0,1,.38.79v4.63a1,1,0,0,1-.76,1L353.52,1630l-.24,0Zm1-4.84v2.57l12.75-3.1V1622l-12.75,3.1Z" transform="translate(-345.36 -1619.77)"/><path class="cls-1" d="M348.05,1643.32a2.44,2.44,0,0,1-2.65-1.87c-.35-1.87,1.59-3.89,3.6-4.83a6.2,6.2,0,0,1,2.59-.64,2.44,2.44,0,0,1,2.65,1.87c.35,1.88-1.59,3.89-3.6,4.83a6.18,6.18,0,0,1-2.59.64Zm3.53-5.34a4.28,4.28,0,0,0-1.74.45c-1.64.78-2.58,2.11-2.48,2.66,0,.19.45.23.69.23a4.28,4.28,0,0,0,1.74-.45c1.65-.78,2.59-2.11,2.49-2.66,0-.18-.45-.23-.69-.23Z" transform="translate(-345.36 -1619.77)"/><polygon class="cls-1" points="8.92 18.25 6.92 18.25 6.92 4.58 8.92 4.58 8.92 18.25 8.92 18.25"/><path class="cls-1" d="M362.8,1639.74a2.44,2.44,0,0,1-2.65-1.87c-.35-1.87,1.59-3.89,3.6-4.83a6.2,6.2,0,0,1,2.59-.64,2.44,2.44,0,0,1,2.65,1.87c.35,1.87-1.6,3.89-3.6,4.83a6.18,6.18,0,0,1-2.59.64Zm3.54-5.34a4.27,4.27,0,0,0-1.74.45c-1.64.78-2.58,2.11-2.48,2.66,0,.19.45.23.69.23a4.28,4.28,0,0,0,1.74-.45c1.65-.78,2.59-2.11,2.49-2.66,0-.19-.45-.23-.69-.23Z" transform="translate(-345.36 -1619.77)"/><polygon class="cls-1" points="23.67 14.67 21.67 14.67 21.67 1 23.67 1 23.67 14.67 23.67 14.67"/><path class="cls-1" d="M353.28,1630a1,1,0,0,1-1-1v-4.63a1,1,0,0,1,.76-1l14.75-3.58a1,1,0,0,1,.86.19,1,1,0,0,1,.38.79v4.63a1,1,0,0,1-.76,1L353.52,1630l-.24,0Zm1-4.84v2.57l12.75-3.1V1622l-12.75,3.1Z" transform="translate(-345.36 -1619.77)"/></svg></li>
+					        <li class="tabs_item tabs_travel"><svg class="tabs_pic tabs_travel_pic" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.75 23.5"><defs></style></defs><title>Vector Smart Object4</title><path class="cls-1" d="M1163.11,1145.2h-19.75a1,1,0,0,1-1-1v-12.58a7,7,0,0,1,7-7h7.75a7,7,0,0,1,7,7v12.58a1,1,0,0,1-1,1Zm-18.75-2h17.75v-11.58a5,5,0,0,0-5-5h-7.75a5,5,0,0,0-5,5v11.58Z" transform="translate(-1142.36 -1124.61)"/><path class="cls-1" d="M1147.4,1148.11c-1.88,0-3-.61-3-1.63v-1.37a1,1,0,0,1,2,0v.89a4.75,4.75,0,0,0,2,0v-.89a1,1,0,0,1,2,0v1.37c0,1-1.12,1.63-3,1.63Z" transform="translate(-1142.36 -1124.61)"/><path class="cls-1" d="M1159.07,1148.11c-1.88,0-3-.61-3-1.63v-1.37a1,1,0,0,1,2,0v.89a4.75,4.75,0,0,0,2,0v-.89a1,1,0,0,1,2,0v1.37c0,1-1.12,1.63-3,1.63Z" transform="translate(-1142.36 -1124.61)"/><path class="cls-1" d="M1158.07,1129.53h-9.67a1,1,0,0,1,0-2h9.67a1,1,0,0,1,0,2Z" transform="translate(-1142.36 -1124.61)"/><path class="cls-1" d="M1148.48,1138.2a1.5,1.5,0,1,0,1.5,1.5,1.5,1.5,0,0,0-1.5-1.5Z" transform="translate(-1142.36 -1124.61)"/><path class="cls-1" d="M1158,1138.2a1.5,1.5,0,1,0,1.5,1.5,1.5,1.5,0,0,0-1.5-1.5Z" transform="translate(-1142.36 -1124.61)"/><path class="cls-1" d="M1160.11,1137.49h-13.75a1.5,1.5,0,0,1-1.5-1.5v-4.37a1.5,1.5,0,0,1,1.5-1.5h13.75a1.5,1.5,0,0,1,1.5,1.5V1136a1.5,1.5,0,0,1-1.5,1.5Zm-13.75-6.37a.5.5,0,0,0-.5.5V1136a.5.5,0,0,0,.5.5h13.75a.5.5,0,0,0,.5-.5v-4.37a.5.5,0,0,0-.5-.5Z" transform="translate(-1142.36 -1124.61)"/></svg></li>
+					    </ul>
+					    <div class="offer_tabs_content">
+					        <div class="offer_tabs_item">
+					        	<h4 class="offer_tabs_title">Reality</h4>
+								<div class="offer_tabs_text">
+									<span class="offer_tabs_text_ic"><i class="fa fa-bolt lightning_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+									<span class="offer_tabs_text_ic"><i class="fa fa-leaf tree_leaf_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+								</div> 
+					        </div>
+					        <div class="offer_tabs_item">
+					        	<h4 class="offer_tabs_title offer_tabs_title_guests">Interesting</h4>
+								<div class="offer_tabs_text">
+									<span class="offer_tabs_text_ic tabs_text_item_guests"><i class="fa fa-sun-o sun_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, accusamus quibusdam reiciendis sunt sit omnis minus voluptatum a quia excepturi, ad modi non odit commodi officia eaque nostrum, reprehenderit quas.</p>
+									<span class="offer_tabs_text_ic tabs_text_item_guests"><i class="fa fa-bicycle bicycle_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+								</div> 
+					        </div>
+					        <div class="offer_tabs_item">
+					        	<h4 class="offer_tabs_title offer_tabs_title_education">Education</h4>
+								<div class="offer_tabs_text">
+									<span class="offer_tabs_text_ic tabs_text_ic_education"><i class="fa fa-desktop desktop_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+									<span class="offer_tabs_text_ic tabs_text_ic_education"><i class="fa fa-flask flask_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, accusamus quibusdam reiciendis sunt sit omnis minus voluptatum a quia excepturi, ad modi non odit commodi officia eaque nostrum, reprehenderit quas.</p>
+								</div> 
+					        </div>
+					        <div class="offer_tabs_item">
+					        	<h4 class="offer_tabs_title offer_tabs_title_amusement">Best Party</h4>
+								<div class="offer_tabs_text">
+									<span class="offer_tabs_text_ic tabs_text_ic_amusement"><i class="fa fa-mixcloud cloud_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, accusamus quibusdam reiciendis sunt sit omnis minus voluptatum a quia excepturi, ad modi non odit commodi officia eaque nostrum, reprehenderit quas.</p>
+									<span class="offer_tabs_text_ic tabs_text_ic_amusement"><i class="fa fa-volume-up volume_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+								</div> 
+					        </div>
+					        <div class="offer_tabs_item">
+					        	<h4 class="offer_tabs_title offer_tabs_title_travel">Interesting</h4>
+								<div class="offer_tabs_text">
+									<span class="offer_tabs_text_ic tabs_text_ic_travel"><i class="fa fa-plane plane_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+									<span class="offer_tabs_text_ic tabs_text_ic_travel"><i class="fa fa-car car_ic" aria-hidden="true"></i></span>
+									<p class="offer_tabs_text_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, accusamus quibusdam reiciendis sunt sit omnis minus voluptatum a quia excepturi, ad modi non odit commodi officia eaque nostrum, reprehenderit quas.</p>
+								</div> 
+					        </div>
+					    </div> <!-- offer_tabs_content -->
+					</div> <!-- Offer tabs -->
+				</div> <!-- offer_contant -->
+			</div>	<!-- container -->
+		</div> <!-- offer -->
+		<div class="footer">
+			<div class="container">
+				<div class="form_border">
+					<div class="footer_form">
+						<h4 class="footer_title">Subscribe to our newsletter</h4>
+						<form action="" class="footer_subscribe">
+							<input type="email" class="mail" placeholder="your@email.com">
+							<button class="mail_btn">Subscribe</button>
+						</form>
+					</div> <!-- footer_form -->
+				</div> <!-- form_border -->
+				<div class="footer_menu">
+					<div class="footer_item">
+					<ul class="footer_nav">
+						<li><a href="#" class="footer_menu_link footer_title_link">Ipsum quis</a></li>
+						<li><a href="#" class="footer_menu_link">Aliquam quis</a></li>
+						<li><a href="#" class="footer_menu_link">Pulvinar purus</a></li>
+						<li><a href="#" class="footer_menu_link">Etiam cursus</a></li>
+						<li><a href="#" class="footer_menu_link">Ipsum quis</a></li>
+						<li><a href="#" class="footer_menu_link">Enim faucib</a></li>
+					</ul>
+					<ul class="footer_nav">
+						<li><a href="#" class="footer_menu_link footer_title_link">Ipsum quis</a></li>
+						<li><a href="#" class="footer_menu_link">Aliquam quis</a></li>
+						<li><a href="#" class="footer_menu_link">Pulvinar purus</a></li>
+						<li><a href="#" class="footer_menu_link">Etiam cursus</a></li>
+						<li><a href="#" class="footer_menu_link">Ipsum quis</a></li>
+						<li><a href="#" class="footer_menu_link">Enim faucib</a></li>
+					</ul>
+					</div> <!-- footer_item -->
+					<div class="footer_social">
+						<div class="footer_link">
+							<span class="social_title">Follow us:</span>
+							<div class="social_link">
+								<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								<a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							</div>
+						</div> <!-- footer_link -->
+						<div class="law">
+							<p class="law_text" >Copyright © All Rights reserved</p>
+						</div>
+					</div> <!-- footer_social -->
+				</div> <!-- footer_menu -->
+			</div> <!-- container -->
+		</div> <!-- footer -->
+	</div> <!-- wrapper -->
+   
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+   <script src="js/common.js"></script>
+</body>
+</html>
