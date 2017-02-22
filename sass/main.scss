@@ -61,10 +61,14 @@ html, body {
 	z-index:10;
 }
 
+.logo {
+	font-size: 0;
+}
+
 .logo_link {
 	width: 155px;
 	height: 45px;
-	padding: 15px 0;
+	padding: 18px 0;
 	background: url(../img/logo.svg) no-repeat;
 	background-position: center center;
 	&:focus {
@@ -126,6 +130,9 @@ html, body {
 			outline: dotted 1px #000;
 			z-index:10;
 		}
+	&:hover {
+		background: #a7a4a5;
+	}
 }
 
 .search_btn span {
@@ -181,7 +188,7 @@ html, body {
 	margin-top: 50px;
 	text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 48px;
@@ -209,7 +216,7 @@ html, body {
 .action_form .select2-container--default .select2-selection--single .select2-selection__rendered {
 	padding: 10px 30px;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -256,7 +263,7 @@ html, body {
 	background-color: rgba(255, 255, 255, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -276,7 +283,7 @@ html, body {
 	margin-bottom: 40px;
 	text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 48px;
@@ -292,7 +299,7 @@ html, body {
 	opacity: 1;
 	transition: opacity 0.3s ease;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -302,7 +309,7 @@ html, body {
 	opacity: 1;
 	transition: opacity 0.3s ease;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -312,7 +319,7 @@ html, body {
 	opacity: 1;
 	transition: opacity 0.3s ease;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -322,7 +329,7 @@ html, body {
 	opacity: 1;
 	transition: opacity 0.3s ease;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -345,7 +352,7 @@ html, body {
 }
 
 .popular_link {
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 3.4;
@@ -384,7 +391,7 @@ html, body {
 
 .choice_city .select2-container--default .select2-selection--single .select2-selection__rendered {
 	color: #e94e38;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 3;
@@ -415,7 +422,7 @@ html, body {
 	border-radius: 30px;
 	border: 1px solid #96a6a7;
 	color: #96a6a7;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 2.5;
@@ -456,7 +463,7 @@ html, body {
 .filter_name {
 	display: inline-block;
 	color: #96a6a7;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 3.1;
@@ -631,7 +638,7 @@ html, body {
 	background: #1baf5d;
 	padding: 10px 25px 10px 20px;
 	color: #ffffff;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 1;
@@ -714,7 +721,7 @@ html, body {
 	border-radius: 15px;
 	padding: 7px 10px;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 1;
@@ -732,7 +739,7 @@ html, body {
 
 .content_text_small {
 	color: #566375;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.5;
@@ -744,7 +751,7 @@ html, body {
 .company,
 .company_big {
 	color: #1baf5d;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 1;
@@ -758,10 +765,18 @@ html, body {
 	margin-bottom: 15px;
 }
 
+.content_pic_stars .stars_ic:hover {
+	color:#2e64ba;
+}
+
+.content_pic_comment .fa:hover {
+	color:#2e64ba;
+}
+
 .stars,
 .stars_big {
 	color: #96a6a7;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 1;
@@ -832,7 +847,7 @@ html, body {
 
 .company_big {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 48px;
@@ -843,7 +858,7 @@ html, body {
 	max-width: 280px;
 	margin-left: 35px;
 	color: #566375;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 300;
@@ -857,7 +872,7 @@ html, body {
 .content_text_name {
 	display: block;
 	color: #566375;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1;
@@ -867,7 +882,7 @@ html, body {
 
 .text_big_link {
 	color: #566375;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 500;
@@ -940,7 +955,7 @@ html, body {
 
 .content_link_load {
 	color: #566375;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	text-decoration: underline;
@@ -976,7 +991,7 @@ html, body {
 .offer_title {
 	margin-top: 80px;
 	color: #566375;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 22px;
 	font-weight: 500;
 	line-height: 48px;
@@ -984,7 +999,7 @@ html, body {
 
 .offer_text {
 	color: #96a6a7;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 20px;
@@ -1125,7 +1140,7 @@ html, body {
 .offer_tabs_title {
 	align-self: center;
 	color: #1baf5d;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 30px;
@@ -1257,7 +1272,7 @@ html, body {
 .footer_title {
 	text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 30px;
@@ -1287,7 +1302,7 @@ html, body {
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 30px;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -1315,7 +1330,7 @@ html, body {
 	right: 2px;
 	text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 3;
@@ -1335,7 +1350,7 @@ html, body {
 
 .mail::-webkit-input-placeholder {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -1343,7 +1358,7 @@ html, body {
 
 .mail::-moz-placeholder {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -1351,7 +1366,7 @@ html, body {
 
 .mail:-moz-placeholder {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -1359,7 +1374,7 @@ html, body {
 
 .mail:-ms-input-placeholder {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
@@ -1384,7 +1399,7 @@ html, body {
 
 .footer_menu_link {
 	color: #c0bebc;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 24px;
@@ -1407,7 +1422,7 @@ html, body {
 
 .footer_title_link {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
@@ -1421,7 +1436,7 @@ html, body {
 .social_title {
 	display: inline-block;
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
@@ -1464,7 +1479,7 @@ html, body {
 
 .law_text {
 	color: white;
-	font-family: Gotham;
+	font-family: Gotham, sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 24px;
